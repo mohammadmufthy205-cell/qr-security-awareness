@@ -4,77 +4,280 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cyber Security Awareness</title>
+    <title>Samsung Cyber Security Awareness</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f5f7;
-            text-align: center;
-            padding: 40px 20px;
+        * {
+            box-sizing: border-box;
         }
 
-        .card {
-            max-width: 600px;
-            margin: auto;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f5;
+            color: #222;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 25px auto;
             background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* IMAGE */
+        .image-box {
+            position: relative;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* TEXT ON TOP OF IMAGE */
+        .image-text {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+            right: 15px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-shadow: 2px 2px 7px #000;
+        }
+
+        .content {
+            padding: 28px;
         }
 
         h1 {
             color: #c62828;
+            text-align: center;
         }
 
         .warning {
-            font-size: 20px;
+            text-align: center;
+            font-size: 22px;
             font-weight: bold;
+            color: #c62828;
+        }
+
+        .mistakes {
+            background: #fff3cd;
+            border-left: 6px solid #ffb300;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .mistakes h2 {
+            margin-top: 0;
+        }
+
+        .mistakes p {
+            margin: 10px 0;
         }
 
         .safe {
-            margin-top: 25px;
-            padding: 15px;
             background: #e8f5e9;
+            border-left: 6px solid #2e7d32;
+            padding: 18px;
             border-radius: 10px;
+            margin-top: 22px;
+        }
+
+        .safe h2 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .message {
+            background: #e3f2fd;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 22px;
+            text-align: center;
         }
 
         .footer {
-            margin-top: 25px;
+            background: #111;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .footer h2 {
+            margin-top: 0;
+        }
+
+        .footer strong {
+            color: #ffffff;
+        }
+
+        .small {
             font-size: 14px;
-            color: #666;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .image-text {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-    <h1>⚠️ Cyber Security Awareness</h1>
+    <!-- IMAGE -->
+    <div class="image-box">
 
-    <p class="warning">
-        ඔබ QR Code එකක් Scan කළා.
-    </p>
+        <!-- Upload your image to GitHub and name it awareness.jpg -->
+        <img src="awareness.jpg"
+             alt="Cyber Security Awareness">
 
-    <p>
-        නොදන්නා QR Codes හරහා fake offers, phishing websites
-        සහ malicious websites වෙත ඔබව යොමු කළ හැක.
-    </p>
+        <div class="image-text">
+            🤦 අයියෝ... දෙපාරක් හිතුවේ නැද්ද?
+        </div>
 
-    <div class="safe">
-        <h2>🛡️ ආරක්ෂිතව සිටින්න</h2>
-
-        <p>
-            කිසිදු නොදන්නා website එකකට
-            <b>Password, OTP හෝ Personal Information</b>
-            ලබා නොදෙන්න.
-        </p>
     </div>
 
-    <p class="footer">
-        මෙය Cyber Security Awareness Demonstration එකකි.
-    </p>
+
+    <div class="content">
+
+        <h1>⚠️ QR Security Awareness</h1>
+
+        <p class="warning">
+            ඔබ QR Code එකක් Scan කළා!
+        </p>
+
+        <p>
+            බය වෙන්න එපා. මේක Cyber Security Awareness
+            Demonstration එකක්. 😊
+        </p>
+
+
+        <!-- COMMON MISTAKES -->
+        <div class="mistakes">
+
+            <h2>🤦 අපි කරන Common Mistakes</h2>
+
+            <p>❌ “FREE” කියලා දැක්කාම ඉක්මනින් Scan කරනවා.</p>
+
+            <p>❌ QR Code එක ආවේ කොහෙන්ද කියලා බලන්නේ නැහැ.</p>
+
+            <p>❌ Scan කළාට පස්සේ URL එක check කරන්නේ නැහැ.</p>
+
+            <p>❌ Unknown website එකකට ඉක්මනින් යනවා.</p>
+
+            <p>❌ “Congratulations! You Won!” වගේ messages විශ්වාස කරනවා.</p>
+
+            <p>❌ Password ඉල්ලුවත් enter කරන්න හදනවා.</p>
+
+            <p>❌ OTP එකත් share කරන්න පුළුවන් කියලා හිතනවා.</p>
+
+            <p>❌ Bank / Card details ඉල්ලුවොත් ලබා දෙනවා.</p>
+
+            <p>❌ Urgent message එකක් දැක්කාම verify නොකර action ගන්නවා.</p>
+
+            <p>❌ QR Code එකක් තියෙන නිසා ඒක automatically safe
+                කියලා හිතනවා.</p>
+
+        </div>
+
+
+        <!-- SAFETY TIPS -->
+        <div class="safe">
+
+            <h2>🛡️ QR Code එකක් Scan කිරීමට පෙර</h2>
+
+            <p><b>1️⃣ STOP</b> – දෙපාරක් හිතන්න.</p>
+
+            <p>
+                <b>2️⃣ VERIFY</b> – QR Code එකේ source එක
+                විශ්වාසදායකද බලන්න.
+            </p>
+
+            <p>
+                <b>3️⃣ CHECK</b> – Open වෙන website/domain එක
+                carefully check කරන්න.
+            </p>
+
+            <p>
+                <b>4️⃣ PROTECT</b> – Password, OTP, PIN හෝ
+                banking details ලබා නොදෙන්න.
+            </p>
+
+            <p>
+                <b>5️⃣ REPORT</b> – සැකයක් තියෙනවා නම්
+                IT/Security team එකට report කරන්න.
+            </p>
+
+        </div>
+
+
+        <!-- IMPORTANT MESSAGE -->
+        <div class="message">
+
+            <h2>🔐 මතක තියාගන්න</h2>
+
+            <p>
+                <b>QR Code එකක් කියන්නේ link එකක් පමණයි.</b>
+            </p>
+
+            <p>
+                QR Code එකක් තිබුණා කියලා
+                ඒක automatically safe කියන guarantee එකක් නැහැ.
+            </p>
+
+            <p>
+                ඊළඟ වතාවේ QR Code එකක් Scan කිරීමට පෙර
+                <b>දෙපාරක් හිතන්න!</b> 😉
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- SAMSUNG MESSAGE -->
+    <div class="footer">
+
+        <h2>🔐 Samsung Authorized Service Center</h2>
+
+        <p>
+            ඔබව Cyber Threats පිළිබඳව දැනුවත් කිරීමත්,
+            ආරක්ෂිතව තබා ගැනීමත් අපගේ වගකීමකි.
+        </p>
+
+        <p>
+            <strong>
+                Stay Alert • Think Before You Scan • Stay Secure
+            </strong>
+        </p>
+
+        <p class="small">
+            Cyber Security Awareness Demonstration
+        </p>
+
+    </div>
 
 </div>
 
